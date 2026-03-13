@@ -1,11 +1,15 @@
 # Virtual Environment
 venv/
+.venv/
 
 # Python cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# TensorFlow intermediate export
+models/saved_model/
 
 # macOS
 .DS_Store
