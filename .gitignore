@@ -8,14 +8,8 @@ __pycache__/
 *.pyo
 *.pyd
 
-# TensorFlow intermediate export
-models/saved_model/
-
 # macOS
 .DS_Store
-
-# VSCode workspace cache
-.vscode/*.log
 
 # Environment variables
 .env
@@ -24,3 +18,22 @@ models/saved_model/
 build/
 dist/
 *.egg-info/
+
+# TensorFlow intermediate export
+models/saved_model/
+
+# VSCode workspace cache
+.vscode/*.log
+
+# Dataset images (folder structure is tracked, images are not)
+dataset/**/*.jpg
+dataset/**/*.jpeg
+dataset/**/*.png
+!dataset/**/.gitkeep
+
+# Training outputs (folder structure is tracked, artifacts are not)
+outputs/models/*
+outputs/tflite/*
+outputs/reports/*
+outputs/android_assets/*
+!outputs/**/.gitkeep
